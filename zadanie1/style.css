@@ -1,0 +1,19 @@
+#moviesCountersContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.moviesCounter {
+  font-weight: 900;
+}
+
+#moviesList {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#moviesList>li:hover {
+  background: #bada55;
+}
