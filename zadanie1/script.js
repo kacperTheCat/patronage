@@ -29,9 +29,11 @@ const addMovies = function() {
      year: ${m.year} <br>
      genere: ${m.genere} <br>
      summary: ${m.summary}
+     <br>
+     seen
+     <input id=${m.id} onChange="addSeen(this)" type='checkbox' ${(m.seen === "T") ? "checked" : null}></input>
   </li>
-  seen
-  <input id=${m.id} onChange="addSeen(this)" type='checkbox' ${(m.seen === "T") ? "checked" : null}></input>`);
+  `);
   totalList.innerHTML = list;
 }
 
