@@ -4,7 +4,7 @@ const seenMovies = document.querySelector('#moviesCounterSeen');
 const totalList = document.querySelector("#moviesList");
 let seenCount = 0;
 
-const done = moviesData.map((m) => {
+moviesData.map((m) => {
   (m.seen === "T") ? seenCount++ : null
 });
 
@@ -27,11 +27,11 @@ const addMovies = function() {
   let list = moviesData.map((m) => `<li>
      title: ${m.title} <br>
      year: ${m.year} <br>
-     genere: ${m.genere} <br>
+     genre: ${m.genre} <br>
      summary: ${m.summary}
      <br>
      seen
-     <input id=${m.id} onChange="addSeen(this)" type='checkbox' ${(m.seen === "T") ? "checked" : null}></input>
+     <input id=${m.id} onChange="addSeen(this)" type='checkbox' ${(m.seen === "T") ? "checked" : "F"}></input>
   </li>
   `);
   totalList.innerHTML = list;

@@ -1,16 +1,28 @@
+body {
+  margin: 0;
+}
+
 #moviesCountersContainer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+  position: relative;
+  top: 0;
+  right: 1rem;
 }
 
 .moviesCounter {
   font-weight: 900;
 }
 
+#moviesListContainer {
+  display: flex;
+  align-items: center;
+}
+
 #moviesList {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   text-align: center;
 }
 
